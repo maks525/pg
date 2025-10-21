@@ -6,6 +6,8 @@ def cislo_text(cislo):
                  18: 'osmnáct', 19: 'devatenáct' }
     desitky = { 20: 'dvacet', 30: 'třicet', 40: 'čtyřicet', 50: 'padesát',
                 60: 'šedesát', 70: 'sedmdesát', 80: 'osmdesát', 90: 'devadesát' }
+    setiny = {100: 'sto', 200: 'dve ste', 300: 'tri sta', 400: 'ctyri sta', 500: 'pet set',
+              600: 'sest set', 700: 'sedm set', 800: 'osm set', 900: 'devet set'}
     
     
     
@@ -18,6 +20,8 @@ def cislo_text(cislo):
             return desitky[des]
         else: 
             return desitky[des] + ' ' + jednotky[jed]
+    elif cislo == 100:
+        return setiny[100]
     else:
         return 'Jenom cisla mensi nez 100, skus to znovu.'
     
