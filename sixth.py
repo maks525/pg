@@ -12,7 +12,7 @@ def download_url_and_get_all_hrefs(url):
     html = response.text
     hrefs = re.findall(r'href=["\']([^"\']+)["\']', html)
 
-    return hrefs
+    return hrefs 
 
 if __name__ == "__main__":
     try:
