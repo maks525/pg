@@ -1,6 +1,5 @@
 import sys
 
-
 jpeg_header = b'\xff\xd8'
 gif_header1 = b'GIF87a'
 gif_header2 = b'GIF89a'
