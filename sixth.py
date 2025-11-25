@@ -22,4 +22,4 @@ if __name__ == "__main__":
             print(h)
     
     except Exception as e:
-        print(f"Program skoncil chybou: {e}") 
+        print(f"Program skoncil chybou: {e}")  
