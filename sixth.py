@@ -7,7 +7,7 @@ def download_url_and_get_all_hrefs(url):
     hrefs = []
     response = requests.get(url)
     if response.status_code != 200:
-        return hrefs
+        return hrefs 
 
     html = response.text
     hrefs = re.findall(r'href=["\']([^"\']+)["\']', html)
